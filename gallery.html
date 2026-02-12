@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forme — Logo Concepts</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:#1a0808;color:#e8dcc8;
+  font-family:'Helvetica Neue',Helvetica,-apple-system,sans-serif;
+  padding:60px 40px;min-height:100vh;
+}
+.header{max-width:1400px;margin:0 auto 50px}
+h1{font-weight:200;font-size:11px;letter-spacing:8px;text-transform:uppercase;color:#c9a87c;margin-bottom:12px}
+.subtitle{font-size:13px;font-weight:300;color:#6b4444;letter-spacing:1px}
+h2{
+  max-width:1400px;margin:48px auto 20px;
+  font-weight:300;font-size:11px;letter-spacing:5px;
+  text-transform:uppercase;color:#7a3030;
+  padding-bottom:10px;border-bottom:1px solid #2a1010;
+}
+.grid{
+  max-width:1400px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;
+}
+.card{
+  background:#120606;border:1px solid #2a1010;border-radius:8px;
+  overflow:hidden;cursor:pointer;transition:all .4s ease;
+}
+.card:hover{border-color:#5a2020;transform:translateY(-2px);box-shadow:0 8px 32px rgba(90,20,20,.2)}
+.card img{width:100%;display:block}
+.label{padding:12px 14px;font-size:10px;letter-spacing:1.5px;color:#6b4444;font-weight:300}
+.num{color:#c9a87c;margin-right:6px}
+.modal{
+  display:none;position:fixed;top:0;left:0;width:100%;height:100%;
+  background:rgba(20,5,5,.97);z-index:100;cursor:pointer;
+  align-items:center;justify-content:center;flex-direction:column;
+}
+.modal.active{display:flex}
+.modal-inner{text-align:center}
+.modal img{max-width:min(80vw,700px);max-height:80vh;border-radius:8px}
+.modal-label{margin-top:20px;font-size:11px;letter-spacing:3px;color:#c9a87c;font-weight:300}
+</style></head>
+<body>
+<div class="header">
+  <h1>Forme — Logo Concepts</h1>
+  <p class="subtitle">20 concepts &middot; Click to enlarge</p>
+</div>
+
+    <h2>Core Concept</h2>
+    <div class="grid">
+          <div class="card" onclick="document.getElementById('m1').classList.add('active')">
+            <img src="01.png" alt="S-Curve + FORME Crossbar — Core" loading="lazy"/>
+            <div class="label"><span class="num">#01</span> S-Curve + FORME Crossbar</div>
+          </div>
+          <div class="card" onclick="document.getElementById('m2').classList.add('active')">
+            <img src="02.png" alt="Spine + Serif FORME at Upper Third" loading="lazy"/>
+            <div class="label"><span class="num">#02</span> Spine + Serif FORME</div>
+          </div>
+          <div class="card" onclick="document.getElementById('m3').classList.add('active')">
+            <img src="03.png" alt="Tall Curve + Small Caps Extending Right" loading="lazy"/>
+            <div class="label"><span class="num">#03</span> Tall Curve + Small Caps</div>
+          </div>
+          <div class="card" onclick="document.getElementById('m4').classList.add('active')">
+            <img src="04.png" alt="Abstract Spine + Sans FORME Branch" loading="lazy"/>
+            <div class="label"><span class="num">#04</span> Abstract Spine + Sans Branch</div>
+          </div>
+    </div>
+    <h2>Text Position</h2>
+    <div class="grid">
+          <div class="card" onclick="document.getElementById('m5').classList.add('active')">
+            <img src="05.png" alt="Text Near Top" loading="lazy"/>
+            <div class="label"><span class="num">#05</span> Text Near Top</div>
+          </div>
+          <div class="card" onclick="document.getElementById('m6').classList.add('active')">
+            <img src="06.png" alt="Text at Two Heights" loading="lazy"/>
+            <div class="label"><span class="num">#06</span> Text at Two Heights</div>
+          </div>
+          <div class="card" onclick="document.getElementById('m7').classList.add('active')">
+            <img src="07.png" alt="Lowercase at Waist" loading="lazy"/>
+            <div class="label"><span class="num">#07</span> Lowercase at Waist</div>
+          </div>
+    </div>
+    <h2>Typography</h2>
+    <div class="grid">
+          <div class="card" onclick="document.getElementById('m8').classList.add('active')">
+            <img src="08.png" alt="Thin Serif — Classical" loading="lazy"/>
+            <div class="label"><span class="num">#08</span> Thin Serif — Classical</div>
+          </div>
+          <div class="card" onclick="document.getElementById('m9').classList.add('active')">
+            <img src="09.png" alt="Ultra-Thin Sans" loading="lazy"/>
+            <div class="label"><span class="num">#09</span> Ultra-Thin Sans</div>
+          </div>
+          <div class="card" onclick="document.getElementById('m10').classList.add('active')">
+            <img src="10.png" alt="Italic Serif" loading="lazy"/>
+            <div class="label"><span class="num">#10</span> Italic Serif</div>
+          </div>
+    </div>
+    <h2>Spine Style</h2>
+    <div class="grid">
+          <div class="card" onclick="document.getElementById('m11').classList.add('active')">
+            <img src="11.png" alt="Straight Line + Head Curve" loading="lazy"/>
+            <div class="label"><span class="num">#11</span> Straight Line + Head Curve</div>
+          </div>
+          <div class="card" onclick="document.getElementById('m12').classList.add('active')">
+            <img src="12.png" alt="Brushstroke Spine" loading="lazy"/>
+            <div class="label"><span class="num">#12</span> Brushstroke Spine</div>
+          </div>
+          <div class="card" onclick="document.getElementById('m13').classList.add('active')">
+            <img src="13.png" alt="Tall Undulating Curve" loading="lazy"/>
+            <div class="label"><span class="num">#13</span> Tall Undulating Curve</div>
+          </div>
+    </div>
+    <h2>Scale & Proportion</h2>
+    <div class="grid">
+          <div class="card" onclick="document.getElementById('m14').classList.add('active')">
+            <img src="14.png" alt="Large Curve, Whisper Text" loading="lazy"/>
+            <div class="label"><span class="num">#14</span> Large Curve, Whisper Text</div>
+          </div>
+          <div class="card" onclick="document.getElementById('m15').classList.add('active')">
+            <img src="15.png" alt="Compact Mark, Vast Space" loading="lazy"/>
+            <div class="label"><span class="num">#15</span> Compact Mark, Vast Space</div>
+          </div>
+          <div class="card" onclick="document.getElementById('m16').classList.add('active')">
+            <img src="16.png" alt="Unified Weight" loading="lazy"/>
+            <div class="label"><span class="num">#16</span> Unified Weight</div>
+          </div>
+    </div>
+    <h2>Body Detail</h2>
+    <div class="grid">
+          <div class="card" onclick="document.getElementById('m17').classList.add('active')">
+            <img src="17.png" alt="Torso Width + FORME" loading="lazy"/>
+            <div class="label"><span class="num">#17</span> Torso Width + FORME</div>
+          </div>
+          <div class="card" onclick="document.getElementById('m18').classList.add('active')">
+            <img src="18.png" alt="Woman's Back Curve" loading="lazy"/>
+            <div class="label"><span class="num">#18</span> Woman's Back Curve</div>
+          </div>
+          <div class="card" onclick="document.getElementById('m19').classList.add('active')">
+            <img src="19.png" alt="Tilted Head" loading="lazy"/>
+            <div class="label"><span class="num">#19</span> Tilted Head</div>
+          </div>
+          <div class="card" onclick="document.getElementById('m20').classList.add('active')">
+            <img src="20.png" alt="Full Back Trace" loading="lazy"/>
+            <div class="label"><span class="num">#20</span> Full Back Trace</div>
+          </div>
+    </div>
+
+        <div class="modal" id="m1" onclick="this.classList.remove('active')"><div class="modal-inner"><img src="01.png"/><div class="modal-label">#01</div></div></div>
+        <div class="modal" id="m2" onclick="this.classList.remove('active')"><div class="modal-inner"><img src="02.png"/><div class="modal-label">#02</div></div></div>
+        <div class="modal" id="m3" onclick="this.classList.remove('active')"><div class="modal-inner"><img src="03.png"/><div class="modal-label">#03</div></div></div>
+        <div class="modal" id="m4" onclick="this.classList.remove('active')"><div class="modal-inner"><img src="04.png"/><div class="modal-label">#04</div></div></div>
+        <div class="modal" id="m5" onclick="this.classList.remove('active')"><div class="modal-inner"><img src="05.png"/><div class="modal-label">#05</div></div></div>
+        <div class="modal" id="m6" onclick="this.classList.remove('active')"><div class="modal-inner"><img src="06.png"/><div class="modal-label">#06</div></div></div>
+        <div class="modal" id="m7" onclick="this.classList.remove('active')"><div class="modal-inner"><img src="07.png"/><div class="modal-label">#07</div></div></div>
+        <div class="modal" id="m8" onclick="this.classList.remove('active')"><div class="modal-inner"><img src="08.png"/><div class="modal-label">#08</div></div></div>
+        <div class="modal" id="m9" onclick="this.classList.remove('active')"><div class="modal-inner"><img src="09.png"/><div class="modal-label">#09</div></div></div>
+        <div class="modal" id="m10" onclick="this.classList.remove('active')"><div class="modal-inner"><img src="10.png"/><div class="modal-label">#10</div></div></div>
+        <div class="modal" id="m11" onclick="this.classList.remove('active')"><div class="modal-inner"><img src="11.png"/><div class="modal-label">#11</div></div></div>
+        <div class="modal" id="m12" onclick="this.classList.remove('active')"><div class="modal-inner"><img src="12.png"/><div class="modal-label">#12</div></div></div>
+        <div class="modal" id="m13" onclick="this.classList.remove('active')"><div class="modal-inner"><img src="13.png"/><div class="modal-label">#13</div></div></div>
+        <div class="modal" id="m14" onclick="this.classList.remove('active')"><div class="modal-inner"><img src="14.png"/><div class="modal-label">#14</div></div></div>
+        <div class="modal" id="m15" onclick="this.classList.remove('active')"><div class="modal-inner"><img src="15.png"/><div class="modal-label">#15</div></div></div>
+        <div class="modal" id="m16" onclick="this.classList.remove('active')"><div class="modal-inner"><img src="16.png"/><div class="modal-label">#16</div></div></div>
+        <div class="modal" id="m17" onclick="this.classList.remove('active')"><div class="modal-inner"><img src="17.png"/><div class="modal-label">#17</div></div></div>
+        <div class="modal" id="m18" onclick="this.classList.remove('active')"><div class="modal-inner"><img src="18.png"/><div class="modal-label">#18</div></div></div>
+        <div class="modal" id="m19" onclick="this.classList.remove('active')"><div class="modal-inner"><img src="19.png"/><div class="modal-label">#19</div></div></div>
+        <div class="modal" id="m20" onclick="this.classList.remove('active')"><div class="modal-inner"><img src="20.png"/><div class="modal-label">#20</div></div></div>
+</body></html>
